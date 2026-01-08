@@ -1,0 +1,98 @@
+
+
+#root {
+  /* max-width: 1280px; */
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+
+/* HEADER STYLES  */
+
+header {
+  background-color: var(--header-bg-color);
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--header-text-color);
+  padding: 4px;
+}
+
+header .signInBtn {
+  cursor: pointer;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+/* ELEMENTS  */
+
+.btn {
+  box-shadow: var(--button-shadow);
+  border-radius: 10px;
+  margin: 6px;
+}
+
+.btn.signInBtn {
+  background-color: var(--signin-btn-color);
+  border-radius: 9999px;
+  
+}
+
+.btn.signInBtn  img {
+  width: 450px;
+  height: 60px;
+}
+
+/* LAYOUT  */
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  /* display: block; */
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #00000059;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+
+.panel  {
+  background: var(--panel-background-color);
+}
+
+.panel.signInSelector {
+  width: 60%;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: var(--panel-shadow);
+}
+
+.errorBox {
+  height: 30px;
+  color : var(--error-message-color);
+}
+
+/* Sign In Component  */
+
+/* .panel.signInSelector .btn.discord {
+  width: 100px;
+} */
+
+
+.btn img {
+  width: 100%;
+  height: 100%;
+}
