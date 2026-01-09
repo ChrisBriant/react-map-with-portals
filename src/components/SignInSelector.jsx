@@ -13,6 +13,7 @@ const SignInSelector = () => {
     const handleDiscordSignIn = () => {
 
         if(acceptTerms) {
+            setErrorMessage("");
             //Do sign in
             const authUrl = "https://discord.com/oauth2/authorize?client_id=1457609526445342793&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A5173%2Fauthdiscord&scope=identify"
 
@@ -28,6 +29,10 @@ const SignInSelector = () => {
         if(acceptTerms) {
             //Do sign in
             setErrorMessage("");
+            const authUrl = "https://accounts.google.com/o/oauth2/v2/auth?client_id=1081924424444-bdq9k3ler72jetcb8lsm7hr0v8fs4u9r.apps.googleusercontent.com&redirect_uri=http://localhost:5173/authgoogle&response_type=code&scope=https://www.googleapis.com/auth/userinfo.profile";
+
+            setShowOverlay(false);
+            navigate(authUrl);
         } else {
             setErrorMessage("Please accept the terms and conditions.");
         }

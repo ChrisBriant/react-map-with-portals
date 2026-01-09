@@ -30,6 +30,7 @@ const Auth = () => {
         break;
       case "authgoogle":
         signInUrl = "signingoogle";
+        break;
       default:
         signInUrl = null;
         break;

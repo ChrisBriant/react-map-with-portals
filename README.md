@@ -28,3 +28,7 @@ Followed prompts to create a react app, enter directory and run "npm install"
 # REDIRECT URIs
 
 https://discord.com/oauth2/authorize?client_id=1457609526445342793&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A5173%2Fauth&scope=identify
+
+### GOOGLE
+
+1081924424444-hnv6lcrc5mtp7o3ufhg4vvnai4on6mln.apps.googleusercontent.com
